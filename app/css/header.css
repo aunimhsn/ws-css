@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+}
+
+.header-top .logo-lbc {
+    width: 300px;
+}
+
+nav.header-middle {
+    display: flex;
+    background-color: #222;
+    padding: 15px 10px;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 8px;
+        border-right: 1px solid white;
+
+    }
+
+    a:last-child {
+        border: none;
+    }
+}
+
+nav.header-middle a:hover {
+    color: orange;
+}
+
+nav.header-middle a:active {
+    color: orange;
+}
+

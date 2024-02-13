@@ -1,0 +1,154 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+@import url('header.css');
+
+main.home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 10px;
+
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+
+  h1.title {
+    text-align: center;
+    padding: 20px 0;
+
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .categories-container,
+  .last-articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    table {
+      width: 700px;
+
+      thead {
+        background-color: #222;
+        color: white;
+
+        th {
+          padding: 15px 0;
+        }
+      }
+
+      tbody {
+        tr td {
+          padding: 15px 3px;
+        }
+        tr:nth-child(even) {
+          background-color: white;
+        }
+        tr:nth-child(odd) {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+
+main.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 10px;
+
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+
+  h1.title {
+    text-align: center;
+    padding: 20px 0;
+    
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .first-row {
+      display: flex;
+      gap: 30px;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      .history, .commitment {
+        border: 1px solid #ddd;
+        padding: 35px;
+      }
+    }
+
+    .second-row {
+      display: flex;
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .satisfaction {
+        border: 1px solid #ddd;
+        padding: 35px;
+      }
+    }
+  }
+}
+
+body.body-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+
+  main.login {
+    border-radius: 5px;
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    padding: 35px;
+
+    .top {
+      display: flex;
+      justify-content: center;
+      img.logo-lbc {
+        width: 200px;
+      }
+    }
+
+    form.input-container {
+      display: flex;
+    }
+
+
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 35px;
+  margin-top: 50px;
+
+  font-size: 0.8em;
+  color: white;
+  font-style: italic;
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
